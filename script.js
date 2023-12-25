@@ -1,5 +1,4 @@
 
-
 //Accessing the rest countries API data by fetch method
 fetch("https://restcountries.com/v3.1/all")
 .then(res => res.json())
@@ -139,7 +138,7 @@ document.body.append(model, container);
 
 //while pressing the click weather button, getting the weather by fetch method
 let press = (country, city, countryCode)=>{
-
+        const apiKey = "0676b5b2685b23ccfdfb180b90545698";
         let mod = document.getElementById("weatherModal");
         mod.removeAttribute("aria-hidden");
         mod.setAttribute("class", "modal fade show");
@@ -147,13 +146,14 @@ let press = (country, city, countryCode)=>{
         mod.setAttribute("role", "dialog");
         mod.style.display = "block";
 
+        
     let url = "";
     if(countryCode == 'HMD'){
-        url = "https://api.openweathermap.org/data/2.5/weather?lat=-53.1067&lon=73.5139&appid=0676b5b2685b23ccfdfb180b90545698";
+        url = `https://api.openweathermap.org/data/2.5/weather?lat=-53.1067&lon=73.5139&appid=${apiKey}`;
     }else if(countryCode == 'BVT'){
-        url = "https://api.openweathermap.org/data/2.5/weather?lat=-54.4232&lon=3.4139&appid=0676b5b2685b23ccfdfb180b90545698";
+        url = `https://api.openweathermap.org/data/2.5/weather?lat=-54.4232&lon=3.4139&appid=${apiKey}`;
     }else{
-        url = `https://api.openweathermap.org/data/2.5/weather?q=${city},${countryCode}&appid=0676b5b2685b23ccfdfb180b90545698`;
+        url = `https://api.openweathermap.org/data/2.5/weather?q=${city},${countryCode}&appid=${apiKey}`;
     }
     fetch(url)
     .then(res => res.json())
