@@ -134,7 +134,7 @@ container.append(heading1 ,row);
 document.body.append(model, container);
 
 })
-.catch(error => alert(error))
+.catch(error => console.log(error))
 
 
 //while pressing the click weather button, getting the weather by fetch method
@@ -189,5 +189,5 @@ let press = (country, city, countryCode)=>{
                 <p>Wind Direction: ${weatherObj.windDirection}°</p>
             `;
     })
-    .catch(error => alert(error))
+    .catch(error => console.log(error))
 }
