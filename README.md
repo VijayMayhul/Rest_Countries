@@ -18,7 +18,7 @@ I learned to fetch the API data using fetch promise method and error handling th
 
 ## Website
 
-[Rest_Countries_List](https://happy-independence-day-lovat.vercel.app/)
+[Rest_Countries_List](https://rest-countries-blue-eight.vercel.app/)
 
 
 ## Screenshots
