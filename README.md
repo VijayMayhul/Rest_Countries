@@ -10,6 +10,9 @@ It's a Rest countries list and it's current weather displaying website which was
 - Javascript
 - Bootstrap
 
+## Features
+
+- Responsive and Interactive Design
 
 ## Lessons Learned
 
