@@ -22,8 +22,6 @@ for(let i=0;i<data.length;i++){
 }
 // console.log(restCountries);
 return restCountries;
-
-
 })
 .then(data =>{
 //creating row and col as per country count
@@ -172,7 +170,9 @@ let press = (country, city, countryCode)=>{
             windSpeed : data.wind.speed,
             windDirection : data.wind.deg
         };
+        // alert(weatherObj);
         return weatherObj;
+        
     })
     .then(data =>{
         let weatherObj = data;
