@@ -144,7 +144,6 @@ let press = (country, city, countryCode)=>{
         mod.setAttribute("role", "dialog");
         mod.style.display = "block";
 
-        
     let url = "";
     if(countryCode == 'HMD'){
         url = `https://api.openweathermap.org/data/2.5/weather?lat=-53.1067&lon=73.5139&appid=${apiKey}`;
